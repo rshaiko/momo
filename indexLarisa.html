@@ -1,45 +1,50 @@
 <!DOCTYPE html>
-
+<!--
+index page for the Momo cafe's webpage.
+Author: Larisa Sabalin
+Date: Dec 11 2017
+-->
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="styles/larisa.css"/>
+    <link type="text/css" rel="stylesheet" href="/Users/larisasabalin/github/momo/styles/larisa.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title> Momo | Home </title>
 </head>
 <body>
-  <div id="indexContainer">
+
+<div id="indexContainer">
 <nav id="navTop">
-  <ul>
-  <li><a href="#">Momo</a></li>
-  <li><a href="#">Our Products</a> </li>
-  <ul>
-    <li> <a href="#">Food</a></li>
-    <li> <a href="#">Drinks</a></li>
-    <li> <a href="#">Deserts</a></li>
+  <ul id="navList">
+    <li><a href="#">Momo</a></li>
+    <li><a href="#">Our Products</a> </li>
+      <ul id="prodList">
+        <li> <a href="#">Food</a></li>
+        <li> <a href="#">Drinks</a></li>
+        <li> <a href="#">Deserts</a></li>
+      </ul>
+    <li> <a href="#">Order</a></li>
+      <ul id="cakeList">
+        <li> <a href="#">Wedding cake</a></li>
+        <li> <a href="#">Birthday cake</a></li>
+        <li> <a href="#">Flower cake</a></li>
+        <li> <a href="#">Photo cake</a></li>
+        <li> <a href="#">Korean style cake and bread</a></li>
+        <li> <a href="#">Custom cakes</a></li>
+      </ul>
+    <li> <a href="#">Decoration</a></li>
+    <li> <a href="#">Events</a></li>
+    <li> <a href="#">Contact</a></li>
   </ul>
-  <li> <a href="#">Order</a></li>
-  <ul>
-    <li> <a href="#">Wedding cake</a></li>
-    <li> <a href="#">Birthday cake</a></li>
-    <li> <a href="#">Flower cake</a></li>
-    <li> <a href="#">Photo cake</a></li>
-    <li> <a href="#">Korean style cake and bread</a></li>
-    <li> <a href="#">Custom cakes</a></li>
-  </ul>
-  <li> <a href="#">Decoration</a></li>
-  <li> <a href="#">Events</a></li>
-  <li> <a href="#">Contact</a></li>
-  </ul>
-  <ul>
+  <ul id="language">
     <li><a href="#">Eng</a></li>
     <li><a href="#">Fr</a></li>
   </ul>
 </nav>
 <main id="mainPage">
 
-    <h1>Best cake in town at <span class="logo">cafe MOMO.</span> Come and try it yourself</h1>
+    <img src="img/logo.jpg" alt="choco dessert photo" name="choco dessert photo"/> <h1 id="slogan"> Best cake in town at <span class="logo">cafe MOMO.</span> Come and try it yourself</h1>
     <h2>Best desserts</h2>
     <p><img src="img/dessertChoco.jpg" alt="choco dessert photo" name="choco dessert photo"/></p>
     <p><img src="img/dessertMatcha.jpg" alt="matcha dessert photo" name="matcha dessert photo"/></p>

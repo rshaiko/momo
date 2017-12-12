@@ -1,7 +1,100 @@
+/** CSS for Momo Cafe Website
+Author: Larisa Sabalin
+Date: Dec 11 2017
+*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body {
-  background-color: #F9D5D3;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(215,219,209, 1.5);
   color:#807F89;
 }
+main {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding:30px;
+  background-color: rgba(236,164,166, 0.2);
+  color:#4C4C52;
+}
+
+#indexContainer {
+  margin:0;
+  padding: 0;
+  /*background-color: rgba(204,203,207, 0.2);*/
+  color:#4C4C52;
+}
+
+
+nav{
+  margin:0 auto;
+  width: 100%;
+  height: auto;
+  background-color: rgba(187,199,186,0.8);
+  position: fixed;
+  z-index: 3;
+  padding-top:0;
+}
+
+/*Styling the navigation*/
+#navtop{
+  margin:0 auto;
+  list-style: none;
+  display: block;
+}
+
+#navList{
+  background-color: rgba(187,199,186,0.1);
+  display: block;
+  position: relative;
+  padding-top: 2px;
+
+
+}
+#navList li, #footerList li, #language li
+{
+  list-style: none;
+  display: inline-block;
+
+}
+#navList li a, #footerList li a, #language li a
+{
+  margin: 0;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  background-color: rgba(187,199,186,0.1);
+  color: #4C4C52;;
+  line-height: 150%;
+  white-space: nowrap;
+  
+  text-align: center;
+  font-size: 18px;
+  }
+#prodList li, #cakeList li {
+  display: none;
+}
+
+#slogan {
+  margin:5px;
+  padding: 10px;
+  display: inline-block;
+  font-size: 28px;
+}
+{
+
+}
+
+
+
+
+
+
 /* colors:
 pink
 #ff94da	(255,148,218)
