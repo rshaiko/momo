@@ -25,16 +25,15 @@ Date: Dec 11 2017
     <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
 
   <ul class="pull-left nav-list">
-
-  <li><a href="#">Momo</a></li>
-  <li><a href="#">Our Products</a>
-  <ul class="nav-dropdown">
-      <li> <a href="#">Drinks</a></li>
-      <li> <a href="#">Desserts</a></li>
-    </ul>
+    <li><a href="#">Momo</a></li>
+    <li><a href="#">Our Products</a>
+      <ul class="nav-dropdown">
+        <li> <a href="#">Drinks</a></li>
+        <li> <a href="#">Desserts</a></li>
+      </ul>
     </li>
     <li> <a href="#">Cakes</a>
-    <ul class="nav-dropdown">
+      <ul class="nav-dropdown">
         <li> <a href="#">Wedding cake</a></li>
         <li> <a href="#">Birthday cake</a></li>
         <li> <a href="#">Flower cake</a></li>
@@ -42,48 +41,47 @@ Date: Dec 11 2017
         <li> <a href="#">Korean style cake and bread</a></li>
         <li> <a href="#">Custom cakes</a></li>
       </ul>
-      </li>
-  <li> <a href="#">Events</a>
-  <ul class="nav-dropdown">
-  <li> <a href="#">Decoration workshop</a></li>
-  <li> <a href="#">Kids birthday</a></li>
+    </li>
+    <li> <a href="#">Events</a>
+        <ul class="nav-dropdown">
+            <li> <a href="#">Decoration workshop</a></li>
+            <li> <a href="#">Kids birthday</a></li>
+        </ul>
+    </li>
+    <li> <a href="#">Order</a></li>
+    <li> <a href="#">Contact</a></li>
   </ul>
-  </li>
-  <li> <a href="#">Order</a></li>
-  <li> <a href="#">Contact</a></li>
-</ul>
-<ul id="language" class="pull-right">
-  <li><a href="#" class="green">Eng</a></li>
-  <li><a href="#" class="green">Fr</a></li>
-</ul>
+  <ul id="language" class="pull-right">
+    <li><a href="#" class="green">Eng</a></li>
+    <li><a href="#" class="green">Fr</a></li>
+  </ul>
 </nav>
 </div>
 </section>
 
   <div>
-  <h1 id="slogan"> Best cake in town at <span class="logo">cafe MOMO.</span> Come and try it yourself.</h1>
+  <h1 id="slogan" style="font-family: "Bangers", cursive;"> Best cake in town at <span class="logo">cafe MOMO.</span> Come and try it yourself.</h1>
+    <div class="fullWidth">
+
+        <img class="mySlides" src="img/dessertChoco.jpg" alt="choco dessert photo" name="choco dessert photo"/>
+        <h2 class="caption">Choco dessert</h2>
+        <img class="mySlides" src="img/_DSC3661.jpg" alt="strawberry dessert photo" name="strawberry dessert photo"/>
+        <h2 class="caption">Strawberry dessert</h2>
+        <img class="mySlides"
+        src="img/dessertFruits.jpg" alt="fruits dessert photo" name="fruits dessert photo"/>
+        <h2 class="caption">Fruits dessert</h2>
+        <img class="mySlides" src="img/blueberry_bingsoo.jpg" alt="blueberry bingsoo dessert photo" name="blueberry bingsoo dessert photo"/>
+        <h2 class="caption">Blueberry dessert</h2>
+        <button class="button black display-left" onclick="plusDivs(-1)">&#10094;</button>
+       <button class="button black display-right" onclick="plusDivs(1)">&#10095;</button>
+       <div class="center inSlide">
+           <h2> Featured products ~ Best desserts </h2>
+    </div>
   </div>
 
 <!--Main-->
 <main id="mainPart" class="centered">
-<div class="container center">
-    <h2> Featured products </h2>
-    <h2> Best desserts </h2>
 
-  <div class="content display-container">
-
-      <img class="mySlides" src="img/dessertChoco.jpg" alt="choco dessert photo" name="choco dessert photo"/>
-
-      <img class="mySlides" src="img/_DSC3661.jpg" alt="strawberry dessert photo" name="strawberry dessert photo"/>
-
-      <img class="mySlides"
-      src="img/dessertFruits.jpg" alt="fruits dessert photo" name="fruits dessert photo"/>
-
-      <img class="mySlides" src="img/blueberry_bingsoo.jpg" alt="blueberry bingsoo dessert photo" name="blueberry bingsoo dessert photo"/>
-
-      <button class="button black display-left" onclick="plusDivs(-1)">&#10094;</button>
-     <button class="button black display-right" onclick="plusDivs(1)">&#10095;</button>
-  </div>
 
 <div class="content display-container">
     <h2>What do our customers say?</h2>
@@ -144,13 +142,20 @@ function carousel() {
   function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
+    var y=
+    document.getElementsByClassName("caption");
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
+       y[i].style.display = "none";
     }
     x[slideIndex-1].style.display = "block";
+    y[slideIndex-1].style.display = "block";
+    z=document.getElementsByClassName("inSlide");
+    x[slideIndex-1].style.width=z[slideIndex-1].style.width;
   }
+
   function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
