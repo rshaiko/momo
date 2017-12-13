@@ -9,67 +9,158 @@ Date: Dec 11 2017
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="/Users/larisasabalin/github/momo/styles/larisa.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title> Momo | Home </title>
 </head>
 <body>
+<!--Nav-->
+<section class="navigation">
+<div class="nav-container">
+  <div class="brand">
+    <a href="#!"><img src="img/logo.jpg" alt="choco dessert photo" name="choco dessert photo" class="squareImg" id="logo"/></a>
+  </div>
+  <nav>
+    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
 
-<div id="indexContainer">
-<nav id="navTop">
-  <ul id="navList">
-    <li><a href="#">Momo</a></li>
-    <li><a href="#">Our Products</a> </li>
-      <ul id="prodList">
-        <li> <a href="#">Food</a></li>
-        <li> <a href="#">Drinks</a></li>
-        <li> <a href="#">Deserts</a></li>
-      </ul>
-    <li> <a href="#">Order</a></li>
-      <ul id="cakeList">
-        <li> <a href="#">Wedding cake</a></li>
-        <li> <a href="#">Birthday cake</a></li>
-        <li> <a href="#">Flower cake</a></li>
-        <li> <a href="#">Photo cake</a></li>
-        <li> <a href="#">Korean style cake and bread</a></li>
-        <li> <a href="#">Custom cakes</a></li>
-      </ul>
-    <li> <a href="#">Decoration</a></li>
-    <li> <a href="#">Events</a></li>
-    <li> <a href="#">Contact</a></li>
+  <ul class="pull-left nav-list">
+
+  <li><a href="#">Momo</a></li>
+  <li><a href="#">Our Products</a>
+  <ul class="nav-dropdown">
+      <li> <a href="#">Drinks</a></li>
+      <li> <a href="#">Desserts</a></li>
+    </ul>
+    </li>
+  <li> <a href="#">Cakes</a>
+    <ul class="nav-dropdown">
+      <li> <a href="#">Wedding cake</a></li>
+      <li> <a href="#">Birthday cake</a></li>
+      <li> <a href="#">Flower cake</a></li>
+      <li> <a href="#">Photo cake</a></li>
+      <li> <a href="#">Korean style cake and bread</a></li>
+      <li> <a href="#">Custom cakes</a></li>
+    </ul>
+    </li>
+  <li> <a href="#">Events</a>
+  <ul class="nav-dropdown">
+  <li> <a href="#">Decoration workshop</a></li>
+  <li> <a href="#">Kids birthday</a></li>
   </ul>
-  <ul id="language">
-    <li><a href="#">Eng</a></li>
-    <li><a href="#">Fr</a></li>
-  </ul>
+  </li>
+  <li> <a href="#">Order</a></li>
+  <li> <a href="#">Contact</a></li>
+</ul>
+<ul id="language" class="pull-right">
+  <li><a href="#" class="green">Eng</a></li>
+  <li><a href="#" class="green">Fr</a></li>
+</ul>
 </nav>
-<main id="mainPage">
+</div>
+</section>
 
-    <img src="img/logo.jpg" alt="choco dessert photo" name="choco dessert photo"/> <h1 id="slogan"> Best cake in town at <span class="logo">cafe MOMO.</span> Come and try it yourself</h1>
-    <h2>Best desserts</h2>
-    <p><img src="img/dessertChoco.jpg" alt="choco dessert photo" name="choco dessert photo"/></p>
-    <p><img src="img/dessertMatcha.jpg" alt="matcha dessert photo" name="matcha dessert photo"/></p>
-    <p><img src="img/dessertFruits.jpg" alt="fruits dessert photo" name="fruits dessert photo"/></p>
-    <p><img src="img/blueberry_bingsoo.jpg" alt="blueberry bingsoo dessert photo" name="blueberry bingsoo dessert photo"/></p>
-    <h2>What our customers say?</h2>
-    <p>“The service is so friendly and the matcha bingsoo I had was amazing. Definitely will come back!” <img src="img/o.jpg" alt="customer's bingsoo photo" name="customer's bingsoo photo"/></p>
-    <p>"I took the matcha bingsoo and it tasted amazing! I did not have high expectations for some reason, but after eating there, I would go back. It is a bit pricey, but we don't have a lot of those in Montreal."</p>
-    <p>"Loved the shaved ice (bingso) here!! I'm from Toronto it's been hard to find these Asian type of shaved ice! The coffee here were delicious too! Going to come back and try some of their cake!"</p>
-    <p>"First time trying bingsoo. Order at the counter and took the large mango bingsoo. The shaved ice was very fine and a lot of syrup on top in the middle and sweetened milk? In the bottom. Very nice people and environment. Definitely returning for the other items on the menu!"</p>
+  <div>
+  <h1 id="slogan"> Best cake in town at <span class="logo">cafe MOMO.</span> Come and try it yourself.</h1>
+  </div>
+
+<!--Main-->
+<main id="mainPart" class="centered">
+<div class="container center">
+    <h2> Featured products </h2>
+    <h2> Best desserts </h2>
+
+  <div class="content display-container">
+
+      <img class="mySlides" src="img/dessertChoco.jpg" alt="choco dessert photo" name="choco dessert photo"/>
+
+      <img class="mySlides" src="img/_DSC3661.jpg" alt="strawberry dessert photo" name="strawberry dessert photo"/>
+
+      <img class="mySlides"
+      src="img/dessertFruits.jpg" alt="fruits dessert photo" name="fruits dessert photo"/>
+
+      <img class="mySlides" src="img/blueberry_bingsoo.jpg" alt="blueberry bingsoo dessert photo" name="blueberry bingsoo dessert photo"/>
+
+      <button class="button black display-left" onclick="plusDivs(-1)">&#10094;</button>
+     <button class="button black display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+<div class="content display-container">
+    <h2>What do our customers say?</h2>
+    <p class="middle">“The service is so friendly and the matcha bingsoo I had was amazing. Definitely will come back!” <img src="img/o.jpg" alt="customer's bingsoo photo" name="customer's bingsoo photo"/></p>
+    <p class="middle">"I took the matcha bingsoo and it tasted amazing! I did not have high expectations for some reason, but after eating there, I would go back. It is a bit pricey, but we don't have a lot of those in Montreal."</p>
+    <p class="middle">"Loved the shaved ice (bingso) here!! I'm from Toronto it's been hard to find these Asian type of shaved ice! The coffee here were delicious too! Going to come back and try some of their cake!"</p>
+    <p class="middle">"First time trying bingsoo. Order at the counter and took the large mango bingsoo. The shaved ice was very fine and a lot of syrup on top in the middle and sweetened milk? In the bottom. Very nice people and environment. Definitely returning for the other items on the menu!"</p>
+  </div>
+</div>
 
 </main>
 
-  <footer id="bottom">
-    <ul id="footerList">
-      <li class="footerItem"> <a href="#"><img class="icon" src="img/facebookLogo.png" alt="facebook-logo" ></a></li>
-      <li class="footerItem"> <a href="#"><img class="icon" src="img/instagramLogo.png" alt="instagram-logo"></a></li>
+  <footer id="bottom" class="modal-footer footer">
+    <div >
+
+      <ul id="footerList" class="pull-left">
+      <li class="footerItem"> <a href="#"><img class="icon squareImg" src="img/facebookLogo.png" alt="facebook-logo" ></a></li>
+      <li class="footerItem"> <a href="#"><img class="icon squareImg" src="img/instagramLogo.png" alt="instagram-logo"></a></li>
       <li class="footerItem"> <a href="#">About</a></li>
-      <li class="footerItem"> <a href="#">Career</a></li>
+
       <li class="footerItem"> <a href="#">Special Requests</a></li>
-      <li class="footerItem"> <a href="#">Accessibility</a></li>
+      <li class="footerItem"> <a href="#">Review us</a></li>
+      <li class="footerItem"> <a href="#">FAQ</a></li>
+
     </ul>
+  </div>
+    <div class="pull-right">
     <p>© 2017 Momo, Inc. </p>
-    <p>Website made by teamRDSL</p>
+    <p class="center small white">Website designed by teamRDSL</p>
+  </div>
   </footer>
   </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script  src="scripts/larisa.js"></script>
+  <script>
+/*var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}*/
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+  </script>
 </body>
 </html>
