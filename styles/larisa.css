@@ -38,10 +38,10 @@ h2 {
   display: block;
   position: relative;
   width: 100%;
-  margin:0;
+  margin:0 auto;
   padding-left:10%;
   padding-right:10%;
-  background-color: rgba(236,164,166, 0.2);
+  background-color: rgba(95,195,92, 0.2);
   color:#4C4C52;
 }
 #bottom {
@@ -358,7 +358,7 @@ left:0;bottom:0;
   font-size:12px!important;
 }
 .middle{
-  font-size:14px; 
+  font-size:14px;
 }
 .pink{
   color:#F9D5D3;
