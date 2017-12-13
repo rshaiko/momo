@@ -296,17 +296,17 @@ nav ul li ul li a {
 {
   background-color: #807F89;
 }*/
+/* general classes*/
+.shrinking{
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+}
 .squareImg
 {
   width:50px;
   height: 50px;
 }
-main div div img{
-  width: 100%;
-}
-
-/* general classes*/
-
 .container{
   padding:0.01em 16px;
 }
@@ -335,11 +335,13 @@ main div div img{
 
 .button{
   font:inherit;margin:0;
+  opacity: 0.5
 }
 .black{
   color:#fff!important;
   background-color:#000!important;
 }
+
 .display-left{
 position:absolute;
 top:50%;
@@ -347,6 +349,7 @@ left:3%;
 transform:translate(0%,-50%);
 -ms-transform:translate(-0%,-50%);
 }
+
 .display-right{
 position:absolute;
 top:50%;
@@ -355,28 +358,30 @@ transform:translate(0%,-50%);
 -ms-transform:translate(0%,-50%);
 }
 .mySlides {
-  display:none;
+
   width:auto;
   margin: 0 auto;
-  height: 700px;
+  height: 50%;
   opacity: 0.5;
   filter: alpha(opacity=50);
   position: relative;
 }
-.inSlide{
-  position: ;
-}
+
 .caption{
-  opacity: 0.5;
+
   position: absolute;
-  top: 200px;
-  left: 0;
-  width: 100%;
-  color: white;
+  top: 80%;
+  left: 15%;
+  margin:auto;
+  width: 70%;
+  color:rgba(253,40,126, 0.8);
   font: bold 24px/45px Helvetica, Sans-Serif;
-  letter-spacing: -1px;
-  background: rgba(0, 0, 0, 0.7);
+  letter-spacing: 0px;
+  background: rgba(255, 255, 255, 0.2);
   padding: 10px;
+
+}
+.carousel{
 
 }
 .display-bottomleft{

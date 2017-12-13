@@ -60,32 +60,49 @@ Date: Dec 11 2017
 </section>
 
   <div>
-  <h1 id="slogan" style="font-family: "Bangers", cursive;"> Best cake in town at <span class="logo">cafe MOMO.</span> Come and try it yourself.</h1>
+  <h1 id="slogan" > Best cake in town at <span class="logo">cafe MOMO.</span> Come and try it yourself.</h1>
     <div class="fullWidth">
 
         <img class="mySlides" src="img/dessertChoco.jpg" alt="choco dessert photo" name="choco dessert photo"/>
-        <h2 class="caption">Choco dessert</h2>
-        <img class="mySlides" src="img/_DSC3661.jpg" alt="strawberry dessert photo" name="strawberry dessert photo"/>
-        <h2 class="caption">Strawberry dessert</h2>
+        <div class="caption center">
+          <h2>Choco dessert</h2>
+          <p></p>
+        </div>
+
+        <img class="mySlides" style="height:600px;" src="img/_DSC3661.jpg" alt="strawberry dessert photo" name="strawberry dessert photo"/>
+        <div class="caption center">
+          <h2>Strawberry dessert</h2>
+          <p></p>
+        </div>
+
         <img class="mySlides"
         src="img/dessertFruits.jpg" alt="fruits dessert photo" name="fruits dessert photo"/>
-        <h2 class="caption">Fruits dessert</h2>
+
+          <div class="caption center">
+            <h2>Fruits dessert</h2>
+            <p></p>
+          </div>
+
         <img class="mySlides" src="img/blueberry_bingsoo.jpg" alt="blueberry bingsoo dessert photo" name="blueberry bingsoo dessert photo"/>
-        <h2 class="caption">Blueberry dessert</h2>
+        <div class="caption center">
+          <h2>Blueberry dessert</h2>
+          <p></p>
+        </div>
+
         <button class="button black display-left" onclick="plusDivs(-1)">&#10094;</button>
        <button class="button black display-right" onclick="plusDivs(1)">&#10095;</button>
-       <div class="center inSlide">
+       <!--<div class="center inSlide">
            <h2> Featured products ~ Best desserts </h2>
-    </div>
+    </div>-->
   </div>
 
 <!--Main-->
 <main id="mainPart" class="centered">
 
 
-<div class="content display-container">
+<div class="content display-container shrinking">
     <h2>What do our customers say?</h2>
-    <p class="middle">“The service is so friendly and the matcha bingsoo I had was amazing. Definitely will come back!” <img src="img/o.jpg" alt="customer's bingsoo photo" name="customer's bingsoo photo"/></p>
+    <p class="middle">“The service is so friendly and the matcha bingsoo I had was amazing. Definitely will come back!” <img  src="img/o.jpg" alt="customer's bingsoo photo" name="customer's bingsoo photo"/></p>
     <p class="middle">"I took the matcha bingsoo and it tasted amazing! I did not have high expectations for some reason, but after eating there, I would go back. It is a bit pricey, but we don't have a lot of those in Montreal."</p>
     <p class="middle">"Loved the shaved ice (bingso) here!! I'm from Toronto it's been hard to find these Asian type of shaved ice! The coffee here were delicious too! Going to come back and try some of their cake!"</p>
     <p class="middle">"First time trying bingsoo. Order at the counter and took the large mango bingsoo. The shaved ice was very fine and a lot of syrup on top in the middle and sweetened milk? In the bottom. Very nice people and environment. Definitely returning for the other items on the menu!"</p>
@@ -152,8 +169,6 @@ function carousel() {
     }
     x[slideIndex-1].style.display = "block";
     y[slideIndex-1].style.display = "block";
-    z=document.getElementsByClassName("inSlide");
-    x[slideIndex-1].style.width=z[slideIndex-1].style.width;
   }
 
   function myFunction() {
