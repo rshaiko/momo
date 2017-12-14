@@ -5,12 +5,12 @@
     }
 }
 
-
-
 .carousel-inner img {
     width: 100%; /* Set width to 100% */
     margin: auto;
     min-height: 200px;
+    opacity: 0.6;
+    filter: alpha(opacity=50);
 }
 
 .green_title {
@@ -22,6 +22,15 @@
 .berlin_font_title {
     font-family: 'Berlin Sans FB';
     font-weight: 200;
+    color:rgba(20,14,13, 2);
+}
+
+.berlin_font_text{
+  color:rgba(67,48,42, 2)!important;
+}
+.background{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
 }
 
 #myCarousel a:link, #myCarousel a:hover {
@@ -36,4 +45,19 @@
 .hr_title{
     border:1px solid lightgray;
     width:200px;
+}
+#footer-menu a button{
+  color:rgba(37,51,69,2);
+}
+.navFont{
+  font-family: Arial Narrow, sans-serif;
+  font-size: 21px;
+  font-weight: 200;
+  text-transform: capitalize!important;
+  color:rgba(45,70,60, 2);
+}
+.center{
+  text-align: center;
+  margin: 0:auto;
+  width: auto;
 }

@@ -3,7 +3,7 @@
 /*  sp_md.css
     CSS document for Dessert Cafe MOMO web site
     Script Date: December 12, 2017
-    Developed by Suim Park 
+    Developed by Suim Park
 */
 
 /* for header */
@@ -26,6 +26,7 @@
 @import url("index_tablet.css") only screen and (min-width:768px) and (max-width:991px);
 @import url("index_mobile_landscape.css") only screen and (min-width:576px) and (max-width:767px);
 @import url("index_mobile.css") only screen and (max-width:575px);
+@import url("gridReviews.css");
 
 
 /* for about.html*/

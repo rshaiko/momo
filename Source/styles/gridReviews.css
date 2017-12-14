@@ -1,0 +1,118 @@
+
+.title{
+  padding-bottom: 90px;
+}
+.grid-containerIndex{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22% ;
+  grid-template-rows: 100px 100px;
+  grid-template-areas:
+  "reviewImg reviewImg reviewImg reviewImg"
+  "reviewTxt reviewTxt reviewTxt reviewTxt ";
+  grid-column-gap:15px;
+  grid-row-gap: 15px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.gridImg{
+  border-radius: 20%;
+  max-height: 180px;
+}
+.itemBack1{
+  background: #D7DBD1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.itemBack2{
+  background-color: #D7DBD1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.itemBack3{
+  background-color: #D7DBD1;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.itemBack4{
+  background-color: #D7DBD1;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.item1{
+    justify-self: center;
+    align-self: end;
+    grid-area:reviewImg;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  /*  align-items: end;*/
+}
+.itemImg1{
+  justify-self: center;
+  align-self: end;
+  grid-area:reviewImg;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.itemImg2{
+  justify-self: end;
+  align-self: end;
+  grid-area:reviewImg;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.itemImg3{
+  justify-self: end;
+  align-self: end;
+  grid-area:reviewImg;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.item2{
+  grid-area:reviewTxt;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+  /*align-items: center;*/
+
+}
+.item3{
+  grid-area:reviewTxt;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+}
+.item4{
+  grid-area:reviewTxt;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+}
+.item5{
+  grid-area:reviewTxt;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+}
