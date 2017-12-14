@@ -2,10 +2,15 @@
 .title{
   padding-bottom: 90px;
 }
+.center{
+  text-align: center;
+  margin: 0:auto;
+  width: auto;
+}
 .grid-containerIndex{
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 22% 22% 22% 22% ;
+  grid-template-columns: 18% 18% 18% 18% ;
   grid-template-rows: 100px 100px;
   grid-template-areas:
   "reviewImg reviewImg reviewImg reviewImg"
@@ -20,6 +25,7 @@
 .gridImg{
   border-radius: 20%;
   max-height: 180px;
+  max-width: 90%;
 }
 .itemBack1{
   background: #D7DBD1;
@@ -69,7 +75,7 @@
   grid-row-end: 2;
 }
 .itemImg2{
-  justify-self: end;
+  justify-self: center;
   align-self: end;
   grid-area:reviewImg;
   grid-column-start: 3;
@@ -78,7 +84,7 @@
   grid-row-end: 2;
 }
 .itemImg3{
-  justify-self: end;
+  justify-self: center;
   align-self: end;
   grid-area:reviewImg;
   grid-column-start: 4;
