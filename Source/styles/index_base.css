@@ -1,0 +1,39 @@
+﻿/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height: 200px;
+}
+
+.green_title {
+    font-family: 'Edwardian Script ITC';
+    color: #6c8620;
+    font-weight: bold;
+}
+
+.berlin_font_title {
+    font-family: 'Berlin Sans FB';
+    font-weight: 200;
+}
+
+#myCarousel a:link, #myCarousel a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#myCarousel p {
+    color:white;
+}
+
+.hr_title{
+    border:1px solid lightgray;
+    width:200px;
+}

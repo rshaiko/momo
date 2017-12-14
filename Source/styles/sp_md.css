@@ -1,0 +1,36 @@
+﻿@charset "utf-8";
+
+/*  sp_md.css
+    CSS document for Dessert Cafe MOMO web site
+    Script Date: December 12, 2017
+    Developed by Suim Park 
+*/
+
+/* for header */
+@import url("header_base.css");
+@import url("header_desktop.css") only screen and (min-width:992px);
+@import url("header_tablet.css") only screen and (min-width:768px) and (max-width:991px);
+@import url("header_mobile_landscape.css") only screen and (min-width:576px) and (max-width:767px);
+@import url("header_mobile.css") only screen and (max-width:575px);
+
+/* for footer*/
+@import url("footer_base.css");
+@import url("footer_desktop.css") only screen and (min-width:992px);
+@import url("footer_tablet.css") only screen and (min-width:768px) and (max-width:991px);
+@import url("footer_mobile_landscape.css") only screen and (min-width:576px) and (max-width:767px);
+@import url("footer_mobile.css") only screen and (max-width:575px);
+
+/* for index.html*/
+@import url("index_base.css");
+@import url("index_desktop.css") only screen and (min-width:992px);
+@import url("index_tablet.css") only screen and (min-width:768px) and (max-width:991px);
+@import url("index_mobile_landscape.css") only screen and (min-width:576px) and (max-width:767px);
+@import url("index_mobile.css") only screen and (max-width:575px);
+
+
+/* for about.html*/
+@import url("about_base.css");
+@import url("about_desktop.css") only screen and (min-width:992px);
+@import url("about_tablet.css") only screen and (min-width:768px) and (max-width:991px);
+@import url("about_mobile_landscape.css") only screen and (min-width:576px) and (max-width:767px);
+@import url("about_mobile.css") only screen and (max-width:575px);

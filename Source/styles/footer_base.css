@@ -1,0 +1,18 @@
+﻿.footer_info {
+    margin:0px;
+    margin-top:30px;
+}
+
+#myFooter button {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+#footer_copy {
+    font-size: 10px;
+}
+
+.lang-fr{
+    display:none;
+}

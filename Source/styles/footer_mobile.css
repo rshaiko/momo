@@ -1,0 +1,18 @@
+﻿.footer_info {
+    font-size: 10px;
+}
+
+#myFooter button {
+    margin-top: 15px;
+    margin-right: 1px;
+}
+
+@media screen and (max-width: 400px) {
+    #footer-menu {
+        display: block;
+    }
+
+    #footer-sn {
+        display: block;
+    }
+}

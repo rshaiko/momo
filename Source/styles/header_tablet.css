@@ -1,0 +1,14 @@
+﻿.container-fluid {
+    width: 90%;
+}
+
+
+.navbar-toggle {
+    padding: 10px;
+    margin: 25px 15px 25px 0;
+}
+
+#nav_img {
+    width: 35px;
+    height: 35px;
+}
