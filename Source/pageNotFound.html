@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dessert Cafe MOMO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/gridReviews.css" />
+    <link rel="stylesheet" href="styles/bootstrap-social.css" />
+    <link rel="stylesheet" type="text/css" href="styles/sp_md_larisa.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/sp_momo.js"></script>
+    <script type="text/javascript" src="scripts/processLanguage.js"></script>
+    <style>
+        .black_background{
+            background-color:black;
+            border:2px solid gray;
+            color:white;
+        }
+
+        #review{
+            width:80%;
+            margin:auto;
+        }
+
+        #review img {
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav" class="nav navbar navbar-fixed-top navbar-default">
+        <div class="container container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img id="nav_img" src="images/logo.png" />
+                </a>
+           </div>
+            <div class="navbar-collapse collapse">
+               <ul id="main_menus" class="nav navbar-nav navbar-right">
+                    <li class="active"><a class="navFont" href="#">MOMO</a></li>
+                    <li class="dropdown">
+                       <a class="dropdown-toggle navFont" data-toggle="dropdown" href="#">
+                           Our Products
+                           <span class="caret"></span>
+                       </a>
+                       <ul class="dropdown-menu">
+                           <li><a class="navFont" href="#">Drinks</a></li>
+                           <li><a class="navFont" href="#">Desserts</a></li>
+                       </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle navFont" data-toggle="dropdown" href="cakes.html">
+                            Cakes
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="navFont" href="#">Wedding cake</a></li>
+                            <li><a class="navFont" href="#">Birthday cake</a></li>
+                            <li><a class="navFont" href="#">flower cake</a></li>
+                            <li><a class="navFont" href="#">Photo cake</a></li>
+                            <li><a class="navFont" href="#">Korean Style cake & Bread</a></li>
+                            <li><a class="navFont" href="#">Custom cake</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle navFont" data-toggle="dropdown" href="events.html">
+                            Events
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="navFont" href="#">Decoration workshop</a></li>
+                            <li><a class="navFont" href="#">Kids birthday</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="navFont" href="#">Order</a></li>
+                    <li><a class="navFont" href="#">Contact</a></li>
+                    <li><button id="btnLang" class="btn btn-sm" type="button" onclick="processCookie();">FR</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<main class="space_before">
+<h1 class="green_title text-center">Oups.. </h1>
+<h3 class="berlin_font_title text-center">This page doesn't exist..<img class="baseImg" src="images/Dog404.png" alt="This page was eaten by our dog" name="This page was eaten by our dog"/></h3>
+</main>
+    <footer class="nav navbar navbar-bottom navbar-inverse">
+        <div class="container container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="myFooter">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="active"><a href="index.html">MOMO</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Special Requests</a></li>
+                        <li><a href="#">Review Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <p class="footer_info navbar-text lang-en">
+                    Monday – Saturday : 10am ~ 10pm | Sunday : 10am ~ 8pm<br />
+                    5525 Ave. Monkland,Montreal, QC H4A 1C7
+                </p>
+                <p class="foonter_info navbar-text lang-fr">
+                    Lundi &#224; Samdi : 10 to 21 | Dimanche : 10 to 20<br />
+                    5525 Av de Monkland, Montr&#232;al, QC H4A 1C7
+                </p>
+
+                <div id="footer-sn" class="navbar-right">
+                    <br />
+                    <button class="btn btn-social-icon btn-facebook btn-sm" type="button"><span class="fa fa-facebook"></span></button>
+                    <button class="btn btn-social-icon btn-instagram btn-sm" type="button"><span class="fa fa-instagram"></span></button>
+                    <button class="btn btn-social-icon btn-kakao btn-sm" type="button"><span class="fa fa-kakao"></span></button>
+                    <form class="navbar-form navbar-left" action="https://www.google.com/search?g=">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <br /><p id="footer_copy" class="navbar-text"> 2016-2017 All Rights Reserved. MOMO Dessert Café.&nbsp;&nbsp;</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>

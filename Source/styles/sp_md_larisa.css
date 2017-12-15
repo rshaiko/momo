@@ -36,3 +36,9 @@
 @import url("about_mobile_landscape.css") only screen and (min-width:576px) and (max-width:767px);
 @import url("about_mobile.css") only screen and (max-width:575px);
 @import url("about_base_larisa.css");
+
+/* for events.html*/
+@import url("events_base_larisa.css");
+
+/* for pageNotFound.html*/
+@import url("page404_base_larisa.css");
