@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dessert Cafe MOMO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-social.css" />
+    <link rel="stylesheet" type="text/css" href="styles/sp_md.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/sp_momo.js"></script>
+    <script type="text/javascript" src="scripts/processLanguage.js"></script>
+</head>
+<body>
+    <nav  id="nav" class="nav navbar navbar-fixed-top navbar-default">
+        <div class="container-fluid container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img id="nav_img" src="images/logo.png" />
+                </a>
+           </div>
+            <div class="navbar-collapse collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a class="navFont" href="index.html">MOMO</a></li>
+                    <li>
+                      <a class="navFont" href="#">OUR PRODUCTS</a></li>
+                    <li>
+                      <a class="navFont" href="#">CAKES</a></li>
+                    <li>
+                      <a class="navFont" href="events.html">EVENTS</a></li>
+                    <li>
+                      <a class="navFont" href="#">ORDER</a></li>
+                    <li>
+                      <a class="navFont" href="#">CONTACT</a></li>
+                    <li><button id="btnLang" class="btn btn-sm" type="button" onclick="processCookie();">FR</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/carousel_menu1.png" alt="Image">
+                <div class="carousel-caption background">
+                    <a href="#">
+                        <h3 class="berlin_font_title">Bing-Soo(Korean Style Iceream)</h3>
+                    </a>
+                    <p class="berlin_font_text">Mango Bing-Soo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Oreo Bing-Soo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <p class="berlin_font_text">Strawberry Bing-Soo | Blue Berry Bing-Soo</p>
+                    <p class="berlin_font_text">Injeolmi Bing-Soo | Macha Bing-Soo</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/carousel_menu2.png" alt="Image">
+                <div class="carousel-caption background">
+                    <a href="#">
+                        <h3 class="berlin_font_title">Korean Style Bread</h3>
+                    </a>
+                    <p class="berlin_font_text">Sweet Rice Dounut | Sweet Rice & Seed Bread</p>
+                    <p class="berlin_font_text">Red Bean Bread | Twisted Dounut&nbsp;&nbsp;&nbsp;</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/carousel_menu3.png" alt="Image">
+                <div class="carousel-caption background">
+                    <a href="#">
+                        <h3 class="berlin_font_title">Cakes</h3>
+                    </a>
+                    <p class="berlin_font_text">Birthday Cakes | Wedding Cakes</p>
+                    <p class="berlin_font_text">Oreo Cake | Strawberry Shortcut Cake</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/carousel_menu4.png" alt="Image">
+                <div class="carousel-caption background">
+                    <a href="#">
+                        <h3 class="berlin_font_title">Coffee, Tea & Drinks</h3>
+                    </a>
+                </div>
+            </div>
+       </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="berlin_font_title center">
+    <h2 class="berlin_font_title center title">What do our customers say?</h2>
+    </div>
+    <div class="grid-containerIndex">
+        <img class="shrinking item1 gridImg" src="images/o.jpg" alt="customer's bingsoo photo" name="customer's bingsoo photo"/>
+        <p class="middle item2">“The service is so friendly and the matcha bingsoo I had was amazing. Definitely will come back!” </p>
+        <p> ~ Name of the customer</p>
+        <img class="shrinking itemImg1 gridImg" src="images/bingsoo4.jpg" alt="customer's bingsoo photo" name="customer's bingsoo photo"/>
+        <p class="middle item3">"I took the matcha bingsoo and it tasted amazing! I did not have high expectations for some reason, but after eating there, I would go back. It is a bit pricey, but we don't have a lot of those in Montreal."</p>
+        <p> ~ Name of the customer</p>
+        <img class="shrinking itemImg2 gridImg" src="images/coffee2.jpg" alt="customer's bingsoo photo" name="customer's bingsoo photo"/>
+        <p class="middle item4">"Loved the shaved ice (bingso) here!! I'm from Toronto it's been hard to find these Asian type of shaved ice! The coffee here were delicious too! Going to come back and try some of their cake!"</p>
+        <p> ~ Name of the customer</p>
+        <img class="shrinking itemImg3 gridImg" src="images/_DSC3660.jpg" alt="customer's bingsoo photo" name="customer's bingsoo photo"/>
+        <p class="middle item5">"First time trying bingsoo. Order at the counter and took the large mango bingsoo. The shaved ice was very fine and a lot of syrup on top in the middle and sweetened milk? In the bottom. Very nice people and environment. Definitely returning for the other items on the menu!"</p>
+        <p> ~ Name of the customer</p>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="container text-center">
+        <h3 class="berlin_font_title">We happily take custom orders for parties, <br />weddings and special occasions.</h3>
+        <br>
+        <h1 class="green_title">Working Hours</h1>
+        <hr class="hr_title"/>
+        <h3 class="berlin_font_title">Monday to Saturday<br />
+            10AM ~ 10PM<br /><br />
+
+            Sunday
+            10AM ~ 8PM</h3>
+        <br>
+    </div><br>
+
+    <footer class="nav navbar navbar-bottom navbar-inverse">
+        <div class="container-fluid">
+            <div id="myFooter">
+                <span id="footer-menu">
+                    <a href="about.html"><button class="btn btn-xs" type="button">About</button></a>
+                    <a href="#"><button class="btn btn-xs"  type="button">Review us</button></a>
+                    <a href="#"><button class="btn btn-xs" type="button">FAQ</button></a>
+
+                </span>
+                <span id="footer-sn">
+                    <button class="btn btn-social-icon btn-facebook btn-sm" type="button"><span class="fa fa-facebook"></span></button>
+                    <button class="btn btn-social-icon btn-instagram btn-sm" type="button"><span class="fa fa-instagram"></span></button>
+                    <button class="btn btn-social-icon btn-kakao btn-sm" type="button"><span class="fa fa-kakao"></span></button>
+                </span>
+            </div>
+            <p class="footer_info navbar-text lang-en">
+                Monday – Saturday : 10am ~ 10pm | Sunday : 10am ~ 8pm<br />
+                5525 Ave. Monkland,Montreal, QC H4A 1C7
+            </p>
+            <p class="foonter_info navbar-text lang-fr">
+                Lundi &#224; Samedi : 10 à 21 | Dimanche : 10:00 à 20:00<br />
+                5525 Ave de Monkland, Montr&#232;al, QC H4A 1C7
+            </p>
+           <div class="navbar-header navbar-right">
+                <form class="navbar-form navbar-left" action="https://www.google.com/search?g=">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <br />
+                <p id="footer_copy" class="navbar-text"> 2016-2017 All Rights Reserved. MOMO Dessert Café.&nbsp;&nbsp;</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

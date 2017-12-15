@@ -1,21 +1,38 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About | MOMO</title>
+    <title>Dessert Cafe MOMO</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/gridReviews.css" />
     <link rel="stylesheet" href="styles/bootstrap-social.css" />
     <link rel="stylesheet" type="text/css" href="styles/sp_md.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts/sp_momo.js"></script>
     <script type="text/javascript" src="scripts/processLanguage.js"></script>
+    <style>
+        .black_background{
+            background-color:black;
+            border:2px solid gray;
+            color:white;
+        }
+
+        #review{
+            width:80%;
+            margin:auto;
+        }
+
+        #review img {
+            width:100%;
+        }
+    </style>
 </head>
 <body>
-    <nav  id="nav" class="nav navbar navbar-fixed-top navbar-default">
-        <div class="container-fluid container">
+    <nav id="nav" class="nav navbar navbar-fixed-top navbar-default">
+        <div class="container container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle Navigation</span>
@@ -28,43 +45,105 @@
                 </a>
            </div>
             <div class="navbar-collapse collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">MOMO</a></li>
-                    <li><a href="#">Our Products</a></li>
-                    <li><a href="#">Cakes</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="#">Order</a></li>
-                    <li><a href="#">Contact</a></li>
+               <ul id="main_menus" class="nav navbar-nav navbar-right">
+                    <li class="active"><a class="navFont" href="index.html">MOMO</a></li>
+                    <li class="dropdown">
+                       <a class="dropdown-toggle navFont" data-toggle="dropdown" href="#">
+                           Our Products
+                           <span class="caret"></span>
+                       </a>
+                       <ul class="dropdown-menu">
+                           <li><a class="navFont" href="#">Drinks</a></li>
+                           <li><a class="navFont" href="#">Desserts</a></li>
+                       </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle navFont" data-toggle="dropdown" href="cakes.html">
+                            Cakes
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="navFont" href="#">Wedding cake</a></li>
+                            <li><a class="navFont" href="#">Birthday cake</a></li>
+                            <li><a class="navFont" href="#">flower cake</a></li>
+                            <li><a class="navFont" href="#">Photo cake</a></li>
+                            <li><a class="navFont" href="#">Korean Style cake & Bread</a></li>
+                            <li><a class="navFont" href="#">Custom cake</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle navFont" data-toggle="dropdown" href="#">
+                            Events
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="navFont" href="#">Decoration workshop</a></li>
+                            <li><a class="navFont" href="#">Kids birthday</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="navFont" href="#">Order</a></li>
+                    <li><a class="navFont" href="#">Contact</a></li>
                     <li><button id="btnLang" class="btn btn-sm" type="button" onclick="processCookie();">FR</button></li>
                 </ul>
             </div>
         </div>
     </nav>
+<main class="space_before">
+  <div>
+  <h2 class="berlin_font_title center title">Would you like to find out a bit more about us?</h2>
+  </div>
+  <div class="grid-containerAbout">
+      <img class="shrinking itemImg1About gridImgAbout borderBlue" src="images/_DSC3648.jpg" alt="customer's bingsoo photo" name="customer's bingsoo photo"/>
+      <p class=" item1About">The name of our cafe is the name of my puppy.
+      This is the reason you can find many dog related decorations in our lovely cafe.</p>
 
+      <img class="borderPink shrinking itemImg2About gridImgAbout" src="images/_DSC3675.jpg" alt="customer's bingsoo photo" name="customer's bingsoo photo"/>
+      <p class=" item2About">Our cafe sells corean style desserts. Most of our customers enjoy the choice we have as well as the great quality of the coffee we offer.</p>
 
-    <footer class="nav navbar navbar-bottom navbar-inverse">
-        <div class="container-fluid">
-            <div id="myFooter">
-                <span id="footer-menu">
-                  <a href="about.html"><button class="btn btn-xs" type="button">About</button></a>
-                  <a href="#"><button class="btn btn-xs"  type="button">Review us</button></a>
-                  <a href="#"><button class="btn btn-xs" type="button">FAQ</button></a>
-                </span>
-                <span id="footer-sn">
-                    <button class="btn btn-social-icon btn-facebook btn-sm" type="button"><span class="fa fa-facebook"></span></button>
-                    <button class="btn btn-social-icon btn-instagram btn-sm" type="button"><span class="fa fa-instagram"></span></button>
-                    <button class="btn btn-social-icon btn-kakao btn-sm" type="button"><span class="fa fa-kakao"></span></button>
-                </span>
+      <img class="borderGreen shrinking itemImg3About gridImgAbout" src="images/_DSC3653.jpg" alt="customer's bingsoo photo" name="customer's bingsoo photo"/>
+      <p class=" item3About">We have a confectioner who makes all our deserts with lots of dedication. You can organize an event: a birthday party or a work team building. Our dessert artist will gladly lead you into the world of dessert decoration.</p>
+
+      <img class="borderViolet shrinking itemImg4About gridImgAbout" src="images/_DSC3682.jpg" alt="customer's bingsoo photo" name="customer's bingsoo photo"/>
+      <p class=" item4About ">We prise the satisfaction of each customer and we care about your comfort during the time spent with us. We have a wide range of drinks that a custom made and taste like nowhere else.</p>
+
+    </div>
+  </div>
+</main>
+
+<footer class="nav navbar navbar-bottom navbar-inverse">
+    <div class="container container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="myFooter">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="index.html">MOMO</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Special Requests</a></li>
+                    <li><a href="#">Review Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
             </div>
             <p class="footer_info navbar-text lang-en">
                 Monday – Saturday : 10am ~ 10pm | Sunday : 10am ~ 8pm<br />
                 5525 Ave. Monkland,Montreal, QC H4A 1C7
             </p>
             <p class="foonter_info navbar-text lang-fr">
-                Lundi &#224; Samedi : 10 à 21 | Dimanche : 10 à 20<br />
-                5525 Ave de Monkland, Montr&#232;al, QC H4A 1C7
+                Lundi &#224; Samdi : 10 to 21 | Dimanche : 10 to 20<br />
+                5525 Av de Monkland, Montr&#232;al, QC H4A 1C7
             </p>
-           <div class="navbar-header navbar-right">
+
+            <div id="footer-sn" class="navbar-right">
+                <br />
+                <button class="btn btn-social-icon btn-facebook btn-sm" type="button"><span class="fa fa-facebook"></span></button>
+                <button class="btn btn-social-icon btn-instagram btn-sm" type="button"><span class="fa fa-instagram"></span></button>
+                <button class="btn btn-social-icon btn-kakao btn-sm" type="button"><span class="fa fa-kakao"></span></button>
                 <form class="navbar-form navbar-left" action="https://www.google.com/search?g=">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search" name="search">
@@ -75,10 +154,11 @@
                         </div>
                     </div>
                 </form>
-                <br />
-                <p id="footer_copy" class="navbar-text"> 2016-2017 All Rights Reserved. MOMO Dessert Café.&nbsp;&nbsp;</p>
+                <br /><p id="footer_copy" class="navbar-text"> 2016-2017 All Rights Reserved. MOMO Dessert Café.&nbsp;&nbsp;</p>
             </div>
+
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>

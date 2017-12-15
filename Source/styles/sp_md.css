@@ -35,3 +35,4 @@
 @import url("about_tablet.css") only screen and (min-width:768px) and (max-width:991px);
 @import url("about_mobile_landscape.css") only screen and (min-width:576px) and (max-width:767px);
 @import url("about_mobile.css") only screen and (max-width:575px);
+@import url("about_base_larisa.css");
