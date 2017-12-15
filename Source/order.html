@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Order | Momo</title>
+    <link rel="icon" type="image/png" href="images/logo-fpic.png">
+    <meta charset="utf-8" />
+    <meta name="main" content="Our contacts." />
+    <meta name="our_team_members" content="Suim Park, Roman Shaiko, Dmitrii Kudrik, Larisa Sabalin" />
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="styles/list-media-query.css" />   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-social.css" />
+    <link rel="stylesheet" type="text/css" href="styles/sp_md.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/sp_momo.js"></script>
+    <script type="text/javascript" src="scripts/processLanguage.js"></script>
+  
+    <style>
+        body {
+            background-image: url(images/_DSC3656.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Bangers';
+            font-size: 20px;
+        }
+        #contactinfo { 
+            background-color:silver;
+            opacity: 0.7;
+            border-radius: 0.5em;
+            border: 0.1px solid grey;
+        }
+        table {
+            width: 45%;
+        }
+      
+    </style>
+</head>
+<body>
+     <nav  id="nav" class="nav navbar navbar-fixed-top navbar-default">
+        <div class="container-fluid container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img id="nav_img" src="images/logo.png" />
+                </a>
+           </div>
+            <div class="navbar-collapse collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">MOMO</a></li>
+                    <li><a href="#">Our Products</a></li>
+                    <li><a href="#">Cakes</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><button id="btnLang" class="btn btn-sm" type="button" onclick="processCookie();">FR</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav><br/> <br/> <br/>
+    
+   
+    
+        
+        <main>
+           <h1 style="text-align: center">Order your meal here:</h1>
+            <table style="margin: auto">   
+                
+           <tr>
+               <td style="color:white; ; vertical-align: top">
+                   <span style="font-size: 1.5em">If you have any questions<br/> call now at: 514 567-5099<br/> or KaKaotalk ID: emilypark3</span>
+               </td>
+                <td>
+                    <form class="thisForm" name="order" id="order"
+                          method="post" action="#" autocomplete="on">
+                         <fieldset id="contactinfo">
+                        
+                        
+                        
+                        <label for="your_name">Your name</label><br/>
+                        <input type="text" id="your_name" maxlength="40" required="required" autofocus="autofocus" size="30"/><br/>
+                        <label for="email">E-mail address</label><br/>
+                        <input type="email" id="email" required="required" placeholder="your_email@domain.com" size="30"/>
+                             <br/>
+                       <label for="address">Your address</label><br/>
+                        <input type="text" id="address" required="required" size="30"/>
+                             <br/>
+                       
+                        <label for="ph_number">Your phone number</label><br/>
+                        <input type="text" id="ph_number" required="required" size="30"/>
+                             <br/>
+                        <label for="your_text">Your message</label>
+                             <br/>
+                        <textarea id="your_text" rows="7"  cols="38" required="required"></textarea>
+                        <br/>
+                        <input type="submit" value="Send Order"
+                               id="submit_form" /><br/><br/>
+                        <input type="reset" value="Clear Fields"
+                               id="clear_form" />
+                            </fieldset>
+                    </form>
+               </td>
+               </tr>
+            </table>
+    </main>
+    <br/> <br/> 
+     <footer class="nav navbar navbar-bottom navbar-inverse">
+        <div class="container-fluid">
+            <div id="myFooter">
+                <span id="footer-menu">
+                    <button class="btn btn-xs" type="button">About</button>
+                    <button class="btn btn-xs" type="button">Special Requests</button>
+                    <button class="btn btn-xs" type="button">Review us</button>
+                    <button class="btn btn-xs" type="button"><a href="faq.html">FAQ</a></button>
+                </span>
+                <span id="footer-sn">
+                    <button class="btn btn-social-icon btn-facebook btn-sm" type="button"><span class="fa fa-facebook"></span></button>
+                    <button class="btn btn-social-icon btn-instagram btn-sm" type="button"><span class="fa fa-instagram"></span></button>
+                    <button class="btn btn-social-icon btn-kakao btn-sm" type="button"><span class="fa fa-kakao"></span></button>
+                </span>
+            </div>
+            <p class="footer_info navbar-text lang-en">
+                Monday – Saturday : 10am ~ 10pm | Sunday : 10am ~ 8pm<br />
+                5525 Ave. Monkland,Montreal, QC H4A 1C7
+            </p>
+            <p class="foonter_info navbar-text lang-fr">
+                Lundi &#224; Samdi : 10 to 21 | Dimanche : 10 to 20<br />
+                5525 Av de Monkland, Montr&#232;al, QC H4A 1C7
+            </p>
+           <div class="navbar-header navbar-right">
+                <form class="navbar-form navbar-left" action="https://www.google.com/search?g=">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <br />
+                <p id="footer_copy" class="navbar-text"> 2016-2017 All Rights Reserved. MOMO Dessert Café.&nbsp;&nbsp;</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
